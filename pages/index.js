@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import Navbar from '../components/Navbar'; // Import Navbar
 import Footer from '../components/Footer'; // Import Footer
 import SearchBar from '../components/SearchBar'; // Import SearchBar
+import PropertyList from '../components/PropertyList'; // Import PropertyList
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       </Header>
       <Main>
         <SearchBar /> {/* Use SearchBar */}
+        <PropertyList /> {/* Use PropertyList */}
         <p>Explore amazing places to stay!</p>
       </Main>
       <Footer /> {/* Use Footer */}
