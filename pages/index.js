@@ -9,9 +9,7 @@ const Home = () => {
   return (
     <Container>
       <Navbar /> {/* Use Navbar */}
-      <Header>
-        <h1>Welcome to Airbnb Clone</h1>
-      </Header>
+
       <Main>
         <SearchBar /> {/* Use SearchBar */}
         <PropertyList /> {/* Use PropertyList */}
@@ -27,16 +25,9 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   padding: 20px;
+  padding-top: 80px; /* Add padding to account for Navbar height */
   position: relative; /* Ensure Footer is positioned correctly */
   min-height: 100vh; /* Ensure the container takes full height */
-`;
-
-const Header = styled.header`
-  background-color: #ff5a5f;
-  color: white;
-  padding: 20px;
-  width: 100%;
-  text-align: center;
 `;
 
 const Main = styled.main`
