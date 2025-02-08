@@ -20,7 +20,9 @@ const PropertyList = () => {
         <input
           type="number"
           value={minRating}
-          onChange={(e) => setMinRating(e.target.value)}
+          onChange={(e) => setMinRating(Number(e.target.value))}
+          min="0"
+          max="5"
         />
       </label>
       <List>
