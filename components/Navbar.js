@@ -32,18 +32,21 @@ const Navbar = () => {
 
 const Nav = styled.nav`
   display: flex;
+  flex-wrap: wrap; /* Allow wrapping */
   justify-content: space-between;
   align-items: center;
   padding: 20px;
   background-color: #ff5a5f;
   color: white;
-  flex-wrap: wrap;
-  width: 100%; /* Ensure Navbar spans full width */
-  position: fixed; /* Fix Navbar at the top */
+  width: 100%;
+  box-sizing: border-box; /* Include padding in width */
+  overflow: hidden; /* Hide any accidental overflow */
+  position: fixed;
   top: 0;
   left: 0;
-  z-index: 1000; /* Ensure Navbar is above other content */
+  z-index: 1000;
 `;
+
 
 const LogoContainer = styled.div`
   display: flex;
@@ -69,6 +72,7 @@ const NavLinks = styled.div`
   display: flex;
   gap: 20px;
   align-items: center;
+
 `;
 
 const NavLink = styled.a`
