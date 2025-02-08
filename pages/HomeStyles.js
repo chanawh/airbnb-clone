@@ -9,6 +9,8 @@ export const Container = styled.div`
   position: relative; /* Ensure Footer is positioned correctly */
   min-height: 100vh; /* Ensure the container takes full height */
   background-color: var(--background-color, #fff);
+  max-width: var(--max-width, 1200px); /* Add max-width for better layout on large screens */
+  margin: 0 auto; /* Center the container */
 
   @media (max-width: 768px) {
     padding: var(--padding-mobile, 10px);
@@ -23,6 +25,9 @@ export const Main = styled.main`
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-shadow: var(--box-shadow, 0 4px 8px rgba(0, 0, 0, 0.1)); /* Add box shadow */
+  border-radius: var(--border-radius, 8px); /* Add border radius */
+  transition: var(--transition, all 0.3s ease); /* Add transition */
 
   @media (max-width: 768px) {
     margin-top: var(--margin-top-mobile, 10px);
